@@ -11964,4 +11964,13 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.carousel-item {
+  height: 500px;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-item {
+    height: 300px;
+  }
 }/*# sourceMappingURL=main.css.map */

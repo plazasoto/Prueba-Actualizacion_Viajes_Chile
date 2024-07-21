@@ -260,7 +260,7 @@
                             data-bs-title="Escribe tu nombre para saber quién nos escribe.">
                                 Nombre <i class="fa-solid fa-circle-info"></i>
                             </label>
-                            <input type="text" class="form-control" id="inputNombre">
+                            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
                         </div>
                         <div class="mb-3 col-6">
                             <label for="inputEmail" 
@@ -282,8 +282,12 @@
 
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="inputCheck">
-                        <label class="form-check-label" for="inputCheck">
-                            <u>Acepto los términos y condiciones</u>
+                        <label class="form-check-label" role="button"
+                        data-bs-toggle="tooltip" data-bs-placement="top" 
+                        data-bs-title="Haz click aquí para leer los términos y condiciones.">
+                            <u data-bs-toggle="modal" data-bs-target="#modalTyC">
+                                Acepto los términos y condiciones
+                            </u>
                         </label>
                     </div>                    
 
@@ -311,6 +315,29 @@
                 </p>
             </div>
         </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modalTyC" tabindex="-1" aria-labelledby="modalTyCLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content text-light bg-dark">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalTyCLabel">Términos y Condiciones</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quos adipisci tempora alias modi vitae, obcaecati vero veniam! 
+                        Id ipsam soluta culpa eligendi mollitia, aspernatur officiis 
+                        praesentium. Repudiandae, quis quam ex culpa error labore veniam 
+                        vitae laborum blanditiis consectetur. Doloribus dignissimos ex laborum.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
     </footer>
 
     <script type="module" src="./assets/js/script.js"></script>

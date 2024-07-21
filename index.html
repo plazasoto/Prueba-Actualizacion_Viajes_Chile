@@ -255,20 +255,26 @@
                 <form>
                     <div class="row">
                         <div class="mb-3 col-6">
-                            <label for="inputNombre">
+                            <label for="inputNombre"
+                            data-bs-toggle="tooltip" data-bs-placement="top" 
+                            data-bs-title="Escribe tu nombre para saber quién nos escribe.">
                                 Nombre <i class="fa-solid fa-circle-info"></i>
                             </label>
                             <input type="text" class="form-control" id="inputNombre">
                         </div>
                         <div class="mb-3 col-6">
-                            <label for="inputEmail">
+                            <label for="inputEmail" 
+                            data-bs-toggle="tooltip" data-bs-placement="top" 
+                            data-bs-title="Asegúrate de entregarnos una dirección válida para que podamos contactarnos contigo.">
                                 Email <i class="fa-solid fa-circle-info"></i>
                             </label>
-                            <input type="email" class="form-control" id="inputEmail">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="correo@ejemplo.com">
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="inputMensaje">
+                        <label for="inputMensaje"
+                        data-bs-toggle="tooltip" data-bs-placement="top" 
+                        data-bs-title="Cuéntanos tu consulta, queja o sugerencia.">
                             Mensaje <i class="fa-solid fa-circle-info"></i>
                         </label>
                         <textarea class="form-control" id="inputMensaje"></textarea>

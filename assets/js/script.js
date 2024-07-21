@@ -1,10 +1,12 @@
+import "../../node_modules/jquery/dist/jquery.js";
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-$(document).ready(function(){
 
+
+$(document).ready(function(){
     $("#botonEnviar").click(function () {
-        alert("Mensaje enviado.");
+        alert("Mensaje enviado exitosamente.");
     });
 });

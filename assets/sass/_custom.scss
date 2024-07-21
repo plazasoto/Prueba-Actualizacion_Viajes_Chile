@@ -1,3 +1,8 @@
+.open-sans{
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Carousel */
 .carousel-item{
     height: 500px;
 }
@@ -5,5 +10,27 @@
 @media screen and (max-width:600px){
     .carousel-item{
         height: 300px;
+    }
+}
+
+/* Testimonios */
+.testimonio{
+    text-align: center;
+    color: white;
+    &__text{
+        font-style: italic;
+    }
+    &__image{
+        object-fit: cover;
+        width: 50px;
+        height: 50px;
+        border-style: solid;
+        border-color: white;
+        border-width: 1px;
+        border-radius: 100%;
+        margin: 5%;
+    }
+    &__name{
+        font-weight: 400;
     }
 }

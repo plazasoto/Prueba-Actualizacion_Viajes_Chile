@@ -246,69 +246,55 @@
 <!--******************************************************-->
 
     <!-- Formulario de Contacto -->
-    <section id="Contacto" class="container my-5 text-light pt-4">
+
+    <footer class="container my-5 text-light pt-4" id="Contacto">
         <h2 class="text-center my-4">Contacto</h2>
         <hr>
-        <form>
-            <div class="form-group my-2">
-                <label for="textoNombre">Nombre</label>
-                <input id="textoNombre" type="text" class="form-control" placeholder="">
-            </div>
-            <div class="form-group my-2">
-                <label for="textoAsunto">Asunto</label>
-                <input id="textoAsunto" type="text" class="form-control" placeholder="">
-            </div>
-            <div class="form-group my-2">
-                <label for="">Mensaje</label>
-                <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="text-start my-2">
-                <button type="button" class="btn btn-info text-light" id="botonEnviar" data-bs-toggle="tooltip"
-                    data-bs-placement="right" data-bs-custom-class="tooltip-azul"
-                    data-bs-title="Presiona para enviarnos tu mensaje.">
-                    Enviar
-                </button>
-            </div>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer class="container-fluid pt-4 pb-2 bg-info text-light">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-6">
-                    <h2 id="ViajesChile_footer">
-                        VIAJES CHILE
-                    </h2>
-                </div>
-                <div class="col-6">
-                    <div class="row justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top"
-                        data-bs-custom-class="tooltip-azul" data-bs-title="Visita nuestras redes sociales.">
-                        <div class="col-1">
-                            <a href="https://github.com/">
-                                <i class="fa-brands fa-square-github display-6 text-light"></i>
-                            </a>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6">
+                <form>
+                    <div class="row">
+                        <div class="mb-3 col-6">
+                            <label for="inputNombre">
+                                Nombre <i class="fa-solid fa-circle-info"></i>
+                            </label>
+                            <input type="text" class="form-control" id="inputNombre">
                         </div>
-                        <div class="col-1">
-                            <a href="https://www.linkedin.com/">
-                                <i class="fa-brands fa-linkedin display-6 text-light"></i>
-                            </a>
-
-                        </div>
-                        <div class="col-1">
-                            <a href="https://twitter.com/">
-                                <i class="fa-brands fa-square-twitter display-6 text-light"></i>
-                            </a>
-
-                        </div>
-                        <div class="col-1">
-                            <a href="https://www.facebook.com/">
-                                <i class="fa-brands fa-square-facebook display-6 text-light"></i>
-                            </a>
-
+                        <div class="mb-3 col-6">
+                            <label for="inputEmail">
+                                Email <i class="fa-solid fa-circle-info"></i>
+                            </label>
+                            <input type="email" class="form-control" id="inputEmail">
                         </div>
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <label for="inputMensaje">
+                            Mensaje <i class="fa-solid fa-circle-info"></i>
+                        </label>
+                        <textarea class="form-control" id="inputMensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary col-12 col-sm-12 col-md-4 text-white">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+56999887766</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>contacto@viajeschile.com</span>
+                </p>
+                <p>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>ViajesChile</span>
+                </p>
+                <p>
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>viajes_chile</span>
+                </p>
             </div>
         </div>
     </footer>
